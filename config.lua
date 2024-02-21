@@ -2,7 +2,7 @@ Config = {
 
     jobRequired = "taxi",
 
-    Management = false, -- if true, the money gained from the trips, will go to the boss menu funds
+    Management = true, -- if true, the money gained from the trips, will go to the boss menu funds
 
     -- set this to false if you want to use distance checks
     UseTarget = GetConvar('UseTarget', 'false') == 'true',
@@ -10,22 +10,22 @@ Config = {
     DefaultTextLocation = "left", -- left, right, top
 
     AllowedVehicles = {
-    [1] = {
-        model = "taxi",
-        label = Lang:t("info.taxi_label_1")
+        [1] = {
+            model = "taxi",
+            label = Lang:t("info.taxi_label_1")
         },
     },
 
     Meter = {
-        ["defaultPrice"] = 125.0, -- price per mile
-        ["startingPrice"] = 0  -- static starting price
+        ["defaultPrice"] = 1, -- price per mile
+        ["startingPrice"] = 2  -- static starting price
     },
 
     Location = vector3(909.5, -177.35, 74.22), -- map blip position
     parkLocation = vector3(909.5, -177.35, 74.22), -- vehicle garage location
 
     Duty = vector3(894.88, -179.22, 74.7),
-    
+
     NPCLocations = {
         TakeLocations = {
             [1] = vector4(257.61, -380.57, 44.71, 340.5),
